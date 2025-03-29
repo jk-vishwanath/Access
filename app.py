@@ -36,6 +36,17 @@ input_data = {
 # Convert to DataFrame
 input_df = pd.DataFrame([input_data])
 
+input_df.columns = [col.replace('Pre-seed', 'Pre-Seed') for col in input_df.columns]
+
+for col in model.feature_names_in_:
+    if col not in input_df.columns:
+        input_df[col] = 0
+
+input_df = input_df[model.feature_names_in_]
+
+input_df = input_df.astype(float)  # Convert all numeric features to float
+
+
 if st.button("Predict Lead Score"):
     prediction = model.predict(input_df)
     st.success(f"Predicted Lead Score: {prediction[0]:.2f}")
