@@ -26,10 +26,10 @@ input_data = {
     "Industry_Finance": industry == "Finance", 
     "Industry_Other": industry == "Other", 
     "Industry_Technology & AI": industry == "Technology & AI",
-    "funding_stage_filled_Round A+": funding_stage == "Round A+",
-    "funding_stage_filled_Pre-Seed": funding_stage == "Pre-Seed",
-    "funding_stage_filled_Seed": funding_stage == "Seed",
-    "funding_stage_filled_Other": funding_stage == "Other"
+    "funding_stage_Round A+": funding_stage == "Round A+",
+    "funding_stage_Pre-Seed": funding_stage == "Pre-Seed",
+    "funding_stage_Seed": funding_stage == "Seed",
+    "funding_stage_Other": funding_stage == "Other"
 
 }
 
