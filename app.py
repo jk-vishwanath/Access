@@ -24,7 +24,7 @@ input_data = {
     "Classification_Other": classification == "Other", 
     "Industry_Healthcare": industry == "Healthcare", 
     "Industry_Finance": industry == "Finance", 
-    "Industry_Other": == "Other", 
+    "Industry_Other": industry == "Other", 
     "Industry_Technology & AI": industry == "Technology & AI",
     "funding_stage_filled_Round A+": funding_stage == "Round A+",
     "funding_stage_filled_Pre-Seed": funding_stage == "Pre-Seed",
