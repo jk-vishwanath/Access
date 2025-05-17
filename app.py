@@ -12,7 +12,7 @@ st.write("Enter the details below to predict the lead score.")
 
 # Input fields for user to enter data
 classification = st.selectbox("Classification", [
-    "CXO/ Founder", "Investors", "Researcher", "Student", "Working Professional"
+    "CXO/ Founder", "Investors", "Researcher", "Student", "Working Professional", "CTO"
 ])
 industry = st.selectbox("Industry", [
     "Business Services", "Business Strategy and Operations", "Consumer & Retail", 
@@ -23,7 +23,7 @@ industry = st.selectbox("Industry", [
     "Travel & Logistics"
 ])
 funding_stage = st.selectbox("Funding Stage", [
-    "Non-Profit", "Pre-Seed", "Seed", "Round A+"
+    "Non-Profit", "Pre-seed", "Seed", "Round A+", "Bootstrapping", "Missing"
 ])
 
 # Create a dictionary for one-hot encoding
